@@ -1,0 +1,89 @@
+.App .App-header{
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body,html{
+  height: 100%;
+}
+*{box-sizing: content-box;}
+#root{position: relative;height: 100%;}
+#root .weui-tabbar{position: fixed;}
+
+@font-face {
+  font-family: 'weixinIcon';  /* project id："189097" */
+  src: url('//at.alicdn.com/t/font_m2bzd6exv67p66r.eot');
+  src: url('//at.alicdn.com/t/font_m2bzd6exv67p66r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_m2bzd6exv67p66r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_m2bzd6exv67p66r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_m2bzd6exv67p66r.svg#iconfont') format('svg');
+
+}
+.wIcon{
+  font-family: weixinIcon;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: -1px;
+  -webkit-text-stroke-width: 0!important;
+  line-height: 28px;
+}
+.weui-badge.weui-badge_dot{border-radius: 50%;}
+.weui-cell .wIcon{color: #10aeff;margin-right: 10px;}
+
+/*.example-enter {
+  opacity: 0.01;
+  transition: opacity .1s ease-in;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+}
+
+.example-leave {
+  opacity: 1;
+  transition: opacity .1s ease-in;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+}*/
+.example-enter {
+    transform: translate3d(100%,0,0);
+    transition: transform 0.4s ;
+    z-index: 1;
+}
+
+.example-enter.example-enter-active {
+    transform: translate3d(0,0,0);
+}
+.example-leave {
+    opacity: 0;
+    transform: translate3d(0,0,0);
+    transition: transform 0.3s ;
+}
+
+.example-leave.example-leave-active {
+    transform: translate3d(0,0,0);
+}
